@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    // === colors ===
+    --color-grey-500: #4D4F62;
+    --color-grey-400: #6A7178;
+    --color-white:    #FFFFFF;
+    --color-red:      #EA5454;
+    --color-cyan:     #44D3D2;
+    --color-blue:     #549EF2;
+    --color-orange:   #FCAE4A;
+
+    // === space ===
+    --space-500: 40px;
+    --space-400: 32px;
+    --space-300: 24px;
+    --space-200: 16px;
+    --space-100:  8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
