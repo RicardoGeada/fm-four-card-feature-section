@@ -1,0 +1,29 @@
+@use "./../../../../fonts.scss";
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-200);
+  color: var(--color-grey-500);
+  max-width: 540px;
+  text-align: center;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__line {
+    &--sub {
+      @include fonts.apply-text-preset("2");
+    }
+    &--main {
+      @include fonts.apply-text-preset("1");
+    }
+  }
+
+  &__description {
+    @include fonts.apply-text-preset("4");
+  }
+}
