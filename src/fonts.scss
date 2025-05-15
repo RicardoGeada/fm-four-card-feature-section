@@ -28,14 +28,14 @@
 
 $text-presets: (
     "1": (
-        size: 36px,
+        size: clamp(24px, 4.6875vw, 36px),
         weight: 600,
         line-height: 1.4,
         letter-spacing: 0.25px,
         font-family: ('Poppins', sans-serif),
     ),
     "2": (
-        size: 36px,
+        size: clamp(24px, 4.6875vw, 36px),
         weight: 200,
         line-height: 1.4,
         letter-spacing: 0.25px,
