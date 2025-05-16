@@ -1,0 +1,44 @@
+@use "./../../../../fonts.scss";
+
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: var(--space-400); 
+   padding: var(--space-400);
+   border-radius: var(--space-100);
+   box-shadow: 0 15px 30px -11px #83a7d280;
+   max-width: 340px;
+   position: relative;
+   overflow: hidden;
+
+   &__top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-cyan);
+   }
+
+   &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   }
+   
+   &__title {
+    @include fonts.apply-text-preset("3");
+    color: var(--color-grey-500);
+   }
+   
+   &__description {
+    @include fonts.apply-text-preset("4");
+    color: var(--color-grey-400);
+   }
+
+   &__icon {
+    aspect-ratio: 1 / 1;
+    width: 64px;
+   }
+}
