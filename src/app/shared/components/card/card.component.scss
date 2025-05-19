@@ -12,6 +12,7 @@
    height: 250px;
    position: relative;
    overflow: hidden;
+   background-color: var(--color-white);
 
    &__top-bar {
     position: absolute;
@@ -33,7 +34,7 @@
    }
    
    &__description {
-    @include fonts.apply-text-preset("4");
+    @include fonts.apply-text-preset("5");
     color: var(--color-grey-400);
    }
 
