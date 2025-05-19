@@ -11,4 +11,8 @@ export class CardComponent {
   @Input() description!: string;
   @Input() icon!: string;
   @Input() color!: string;
+
+  get iconAlt(): string {
+    return this.icon?.split('.')[0] || '';
+  }
 }
